@@ -13,7 +13,8 @@
 //  .values -> O(n)
 //  .entries -> O(n)
 //  hasOwnProperty -> O(1)
-___________________________________________________________
+
+// =======================================================
 
 // Arrays, ordered lists
 // there is intrinsic order to the data
@@ -21,13 +22,22 @@ ___________________________________________________________
 
 // BigO for Array:
 //  insertion -> it depends
+//      to add to end of an array is constant time O(1)
+//      to add to beginning of an array is the problem b/c
+//      every item would need to be re-indexed O(n)
 //  removal -> depends
+//      from the beginning of array, every item would be
+//      re-indexed
 //  searching -> O(n)
 //  access -> O(1)
 
 // Array Methods
-//  
-
+//  push and pop -> O(1)
+//  shift and unshift -> O(n)
+//  concat, slice, splice -> O(n)
+//  sort -> O(nlog(n))
+//  forEach/map/filter/reduce/etc -> O(n)
 
 // Singly linked list
+
 // Doubly liked list
