@@ -21,3 +21,5 @@ Tell me about a time when you took initiative.
 Summarize the project you took initiative on
 Describe what you did -- be concise, but give just enough detail so that your interviewer (who just met you) can follow easily
 What was the result? How was the project/situation improved because of your actions?
+
+### The DS&A directory is based off Udemy Course : The Missing Computer Science and Coding Interview Bootcamp
