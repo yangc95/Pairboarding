@@ -32,6 +32,52 @@ function strToObj(str) {
 // MULTIPLE POINTERS
 // =======================================================
 
+// sumZero -> accepts a sorted array, f(x) should return
+// first pair where sum is equal to zero
+
+function sumZero(arr) {
+ let i1 = 0;
+ let i2 = arr.length - 1;
+
+ while (i1 < i2) {
+    let sum = arr[i1] + arr[i2];
+    if (sum === 0) return [arr[i1], arr[i2]];
+    if (sum > 0) i2--;
+    if (sum < 0) i1++;
+ }
+}
+
+// console.log(sumZero([-2, 0, 1, 2, 3]))
+
+// countUniqueValues -> accepts sorted arr, counts unique
+// values in array
+
+// function countUniqueValues(arr) {
+//     count = 0;
+//     for (let i = 0; i <= arr.length; i++) {
+//         if (arr[i] !== arr[i + 1]) count += 1; 
+//     }
+//     return count;
+// }
+
+function countUniqueValues(arr) {
+    if (arr.length === 0) {
+        return 0;
+    }
+    let i = 0;
+
+    for (let j = 1; j < arr.length; j++) {
+        if (arr[i] !== arr[j]) {
+            i++;
+            arr[i] = arr[j];
+        }
+    }
+
+    return i + 1;
+}
+
+console.log(countUniqueValues([1, 1, 1, 2]))
+
 // =======================================================
 // 
 // =======================================================
