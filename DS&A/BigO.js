@@ -67,3 +67,9 @@ function double(arr) {
 // log2 8 = 3 --> 2^3 = 8
 // logBase Value = Exponent --> Base^Exponent = Value
 // for Big-O, omit the base
+
+
+// RECAP
+// BigO analyzes the performace of an algo in terms of
+// time or space complexity
+// dealing with general trends (linear, quadratic, constant)
