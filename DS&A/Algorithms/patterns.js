@@ -55,7 +55,7 @@ function sumZero(arr) {
 // function countUniqueValues(arr) {
 //     count = 0;
 //     for (let i = 0; i <= arr.length; i++) {
-//         if (arr[i] !== arr[i + 1]) count += 1; 
+//         if (arr[i] !== arr[i + 1]) count++; 
 //     }
 //     return count;
 // }
@@ -79,8 +79,22 @@ function countUniqueValues(arr) {
 console.log(countUniqueValues([1, 1, 1, 2]))
 
 // =======================================================
-// 
+// SLIDING WINDOW
 // =======================================================
+
+// think in terms of an array or number where the window
+// refers to a portion of the data structure
+// can either be an array or num from one pos to another
+
+// maxSubarraySum -> takes an arr of integers and a num (n)
+// f(x) should calculate max sum of n consecutive ele in arr
+
+function maxSubarraySum(arr, n) {
+    if (num > arr.length) return null;
+
+    let max = 0;
+}
+
 
 // =======================================================
 // 
