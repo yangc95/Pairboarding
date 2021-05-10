@@ -73,3 +73,22 @@ function double(arr) {
 // BigO analyzes the performace of an algo in terms of
 // time or space complexity
 // dealing with general trends (linear, quadratic, constant)
+
+
+// =======================================================
+// CCI NOTES BELOW
+// =======================================================
+
+// Quicksort - O(n log n)
+//  picks random "pivot" element and partially sorts the array
+//  based on the pivot point. It recursively sorts the L/R sides
+//  using this process
+function quicksort(arr) {
+    if (arr.length < 2) return arr;
+    let pivot = arr[0];
+    let left = arr.filter(ele => ele < pivot);
+    let right = arr.filter(ele => ele > pivot);
+    return quicksort(left).concat([pivot]).concat(quicksort(right));
+}
+
+console.log(quicksort([1,4,2,7,3,0]))

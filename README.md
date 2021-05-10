@@ -23,3 +23,4 @@ Describe what you did -- be concise, but give just enough detail so that your in
 What was the result? How was the project/situation improved because of your actions?
 
 ### The DS&A directory is based off Udemy Course : The Missing Computer Science and Coding Interview Bootcamp
+CCI notes are added to this directory. CCI Notes are from Cracking the Coding Interview.
