@@ -91,4 +91,7 @@ function quicksort(arr) {
     return quicksort(left).concat([pivot]).concat(quicksort(right));
 }
 
-console.log(quicksort([1,4,2,7,3,0]))
+// console.log(quicksort([1,4,2,7,3,0]))
+
+// ArrayList is a dynamically resizing array
+//  capacity will grow as you insert elements
