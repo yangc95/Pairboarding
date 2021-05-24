@@ -7,4 +7,4 @@ function quicksort(arr) {
   return quicksort(left).concat([mid]).concat(quicksort(right));
 }
 
-console.log(quicksort([1,4,5,2,6]))
+// console.log(quicksort([1,4,5,2,6]))
