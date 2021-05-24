@@ -1,11 +1,13 @@
 function binarySearch(arr, target) {
     let midIndex = arr.length/2;
-    if (arr[midIndex] === target) return midIndex;
 
+    if (target < arr[midIndex]) {
 
-    if (target < mid) {
+    } else if (target > arr[midIndex]) {
 
-    } else if (target > mid) {
-
+    } else if (target === arr[midIndex]) {
+        return midIndex;
+    } else {
+        return null;
     }
 }
