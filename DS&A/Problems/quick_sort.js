@@ -1,10 +1,9 @@
 function quicksort(arr) {
-  let mid = arr[arr.length/2];
-
-  let left = arr.filter(el => el < arr[mid]);
-  let right = arr.filter(el => el > arr[mid]);
-
+  if (arr.length < 2) return arr;
+  let pivot = arr[0];
+  let left = arr.filter(el => el < pivot);
+  let right = arr.filter(el => el > pivot);
   return quicksort(left).concat([mid]).concat(quicksort(right));
 }
 
-// console.log(quicksort([1,4,5,2,6]))
+console.log(quicksort([1,4,5,2,6]))
