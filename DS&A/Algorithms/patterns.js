@@ -2,6 +2,48 @@
 // FREQUENCY COUNTER PATTERN
 // =======================================================
 
+// returns true if every value in the array has its corresponding
+// value squared in the second array
+// frequenct of values must be the same
+
+function same(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+
+    let obj1 = objectify(arr1);
+    let obj2 = objectify(arr2);
+
+    // for (let i = 0; i < arr1.length; i++) {
+    //     let currentIndex = arr2.indexOf(arr1[i] ** 2);
+    //     if (currentIndex === -1) {
+    //         return false
+    //     }
+    //     arr2.splice(currentIndex, 1)
+    // }
+
+    // return true;
+    
+    for (let key in obj1) {
+        if (!(key ** 2 in obj2)) {
+            return false;
+        }
+        if (obj1[key] !== obj2[key ** 2]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function objectify(arr) {
+    let obj = {};
+    for (let val of arr) {
+        obj[val] = (obj[val] || 0) + 1
+    }
+    return obj;
+}
+
+console.log(same([1,2,3,4], [1,4,9,16]))
+
 // Anagrams -> given two strings, write a f(x) to determine
 // if the second string is an anagram of the first
 //  example: validAnagram('dog','god') => true
@@ -76,7 +118,7 @@ function countUniqueValues(arr) {
     return i + 1;
 }
 
-console.log(countUniqueValues([1, 1, 1, 2]))
+// console.log(countUniqueValues([1, 1, 1, 2]))
 
 // =======================================================
 // SLIDING WINDOW
